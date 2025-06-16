@@ -9,22 +9,31 @@
   </head>
 </head>
 <body>
-  <header  class="border-bottom p-2">
+
+<header  class="border-bottom p-2">
     
-  <div class="d-flex justify-content-between align-items-start ms-2">
+  <div class="d-flex justify-content-between align-items-center ms-2">
 
-  <img class="logo1" src="assets/images/logo.png" alt="Logo">
+    <div class="d-flex align-items-center gap-2">
+      <img class="logo1" src="assets/images/logo.png" alt="Logo" style="height:40px;">
 
-  <div class="dropdown row ">
-    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      se-lab-acp
-    </button>
-  </div>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          se-lab-acp
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">...</a></li>
+          <li><a class="dropdown-item" href="#">...</a></li>
+        </ul>
+      </div>
 
+      <button type="button" class="btn btn-success bi bi-arrow-down">
+        Download Report
+      </button>
+    </div>
 
-  <button type="button" class="btn btn-success bi bi-arrow-down"> Download Report</button>
+    <a href="..." class="btn btn-outline-danger mt-2">Log Out</a>
 
-  <a href="..." class="btn btn-outline-danger mt-2">Log Out</a>
   </div>  
 
   <div>
@@ -38,18 +47,32 @@
 
   <br>
 
-   <div class="container col-md-9">
-    <h5>OVERVIEW</h5>
+    <div class="container">
+      <h5>OVERVIEW</h5>
 
-    <div class="row">
-      <div class="col-md-6">
-        <p>CUMULATIVE GROSS PROD.</p>
-        <P>13 bbl</P>
+      <div class="row row-cols-auto">
+        <div class="col">
+          <p>CUMULATIVE GROSS PROD.</p>
+          <P><b>13</b> bbl</P>
+        </div>
+        <div class="col">
+          <p>CUMULATIVE RUNTIME</p>
+          <P><b>1039</b> min</P>
+        </div>
+        <div class="col">
+          <p>LAST POLLED PIP</p>
+          <P><b>0</b> psi</P>
+        </div>
+        <div class="col">
+          <p>LAST POLLED BHP</p>
+          <P><b>0</b> psi</P>
+        </div>
+        <div class="col">
+          <p>LAST POLLED FHC</p>
+          <P><b>0</b> ft</P>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="container-sm">100% wide until small breakpoint</div>
 
 
    <script src="assets/js/bootstrap.min.js"></script>
