@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/fonts/bootstrap-icons.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
@@ -47,36 +47,81 @@
 
   <br>
 
-    <div class="container">
-      <h5 class="titles">OVERVIEW</h5>
+  <div class="container my-4">
+    <h5 class="titles mb-3">OVERVIEW</h5>
 
-      <div class="row row-cols-auto">
-        <div class="col">
-          <p class="subtitles">CUMULATIVE GROSS PROD.</p>
-          <P><b class="value">13</b> bbl</P>
+    <div class="row row-cols-auto g-3">
+      <div class="col">
+        <p class="subtitles mb-1">CUMULATIVE GROSS PROD.</p>
+        <p><b class="value">13</b> bbl</p>
+      </div>
+      <div class="col">
+        <p class="subtitles mb-1">CUMULATIVE RUNTIME</p>
+        <p><b class="value">1039</b> min</p>
+      </div>
+      <div class="col">
+        <p class="subtitles mb-1">LAST POLLED PIP</p>
+        <p><b class="value">0</b> psi</p>
+      </div>
+      <div class="col">
+        <p class="subtitles mb-1">LAST POLLED BHP</p>
+        <p><b class="value">0</b> psi</p>
+      </div>
+      <div class="col">
+        <p class="subtitles mb-1">LAST POLLED FHC</p>
+        <p><b class="value">0</b> ft</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container  py-4">
+    <div class="contender mx-auto">
+      <h5 class="titles">BEAM PUMP</h5>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row row-cols-2 g-3">
+            <div class="col">
+              <p class="subtitles mb-1">COUNTER BALANCE</p>
+              <p><b class="value">0</b> %</p>
+            </div>
+            <div class="col">
+              <p class="subtitles mb-1">SPM</p>
+              <p><b class="value">38</b> SPM</p>
+            </div>
+            <div class="col">
+              <p class="subtitles mb-1">STATUS</p>
+              <p><b class="value">Hand</b></p>
+            </div>
+            <div class="col">
+              <p class="subtitles mb-1">DRIVE STATUS</p>
+              <p><b class="value">Forward</b></p>
+            </div>
+            <div class="col">
+              <p class="subtitles mb-1">DRIVE FAULT</p>
+              <p><b class="value">No fault</b></p>
+            </div>
+          </div>
+          <div class="mt-4 text-muted">imagem</div>
         </div>
-        <div class="col">
-          <p class="subtitles">CUMULATIVE RUNTIME</p>
-          <P><b class="value">1039</b> min</P>
-        </div>
-        <div class="col">
-          <p class="subtitles">LAST POLLED PIP</p>
-          <P><b class="value">0</b> psi</P>
-        </div>
-        <div class="col">
-          <p class="subtitles">LAST POLLED BHP</p>
-          <P><b class="value">0</b> psi</P>
-        </div>
-        <div class="col">
-          <p class="subtitles">LAST POLLED FHC</p>
-          <P><b class="value">0</b> ft</P>
+
+        <div class="col-md-6">
+          <h6 class="titles">ALERT STATUS</h6>
+          <div class="row row-cols-2 g-2">
+            <div class="col"><p class="subtitles"><i class="bi bi-check"></i> ESD Shutdown</p></div>
+            <div class="col"><p class="subtitles"><i class="bi bi-check"></i> Operation Shutdown</p></div>
+            <div class="col"><p class="subtitles"><i class="bi bi-check"></i> Vibration Shutdown</p></div>
+            <div class="col"><p class="subtitles"><i class="bi bi-check"></i> HH Pressure Shutdown</p></div>
+            <div class="col"><p class="subtitles"><i class="bi bi-check"></i> Alarm High</p></div>
+            <div class="col"><p class="subtitles"><i class="bi bi-check"></i> Alarm Low</p></div>
+            <div class="col"><p class="subtitles"><i class="bi bi-check"></i> Alert High</p></div>
+            <div class="col"><p class="subtitles"><i class="bi bi-check"></i> Fault Low</p></div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <br>
 
-
-   <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
