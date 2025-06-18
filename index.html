@@ -1,53 +1,56 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
-    <link rel="stylesheet" href="assets/fonts/bootstrap-icons.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+</head>
+
 <body>
 
-<header  class="border-bottom p-2">
-    
-  <div class="d-flex justify-content-between align-items-center ms-2">
+  <header class="border-bottom p-2">
 
-    <div class="d-flex align-items-center gap-2">
-      <img class="logo1" src="assets/images/logo.png" alt="Logo" style="height:40px;">
+    <div class="d-flex justify-content-between align-items-center ms-2">
 
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          se-lab-acp
+      <div class="d-flex align-items-center gap-2">
+        <img class="logo1" src="assets/images/logo.png" alt="Logo" style="height:40px;">
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            se-lab-acp
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">...</a></li>
+            <li><a class="dropdown-item" href="#">...</a></li>
+          </ul>
+        </div>
+
+        <button type="button" class="btn btn-success bi bi-arrow-down">
+          Download Report
         </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">...</a></li>
-          <li><a class="dropdown-item" href="#">...</a></li>
-        </ul>
       </div>
 
-      <button type="button" class="btn btn-success bi bi-arrow-down">
-        Download Report
-      </button>
+      <a href="..." class="btn btn-outline-danger mt-2">Log Out</a>
+
     </div>
 
-    <a href="..." class="btn btn-outline-danger mt-2">Log Out</a>
-
-  </div>  
-
-  <div>
-    <a class="button" href="..." class="btn btn-primary me-2">Analytics</a>
-    <a class="button" href="..." class="btn btn-primary me-2">Production</a>
-    <a class="button-on" href="index.html" class="btn btn-primary">Beam Pump</a>
-  </div>
+    <div>
+      <a class="button" href="..." class="btn btn-primary me-2">Analytics</a>
+      <a class="button" href="..." class="btn btn-primary me-2">Production</a>
+      <a class="button-on" href="index.html" class="btn btn-primary">Beam Pump</a>
+    </div>
 
 
-  </header> 
+  </header>
 
   <br>
 
-  <div class="container my-4">
+  <div class="container over my-2">
     <h5 class="titles mb-3">OVERVIEW</h5>
 
     <div class="row row-cols-auto g-3">
@@ -74,54 +77,110 @@
     </div>
   </div>
 
-  <div class="container  py-4">
-    <div class="contender mx-auto">
+  <div class="dashboard">
+    <div class="column beam-pump">
       <h5 class="titles">BEAM PUMP</h5>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="row row-cols-2 g-3">
-            <div class="col">
-              <p class="subtitles mb-1">COUNTER BALANCE</p>
-              <p><b class="value">0</b> %</p>
-            </div>
-            <div class="col">
-              <p class="subtitles mb-1">SPM</p>
-              <p><b class="value">38</b> SPM</p>
-            </div>
-            <div class="col">
-              <p class="subtitles mb-1">STATUS</p>
-              <p><b class="value">Hand</b></p>
-            </div>
-            <div class="col">
-              <p class="subtitles mb-1">DRIVE STATUS</p>
-              <p><b class="value">Forward</b></p>
-            </div>
-            <div class="col">
-              <p class="subtitles mb-1">DRIVE FAULT</p>
-              <p><b class="value">No fault</b></p>
-            </div>
-          </div>
-          <div class="mt-4 text-muted">imagem</div>
+
+      <div class="info-grid">
+        <div class="info-item">
+          <p class="subtitles mb-1">COUNTER BALANCE</p>
+          <p><b class="value">0%</b></p>
+        </div>
+        <div class="info-item">
+          <p class="subtitles mb-1">HZ</p>
+          <p><b class="value">0</b> rpm</p>
+        </div>
+        <div class="info-item">
+          <p class="subtitles mb-1">SPM</p>
+          <p><b><b class="value">38</b> SPM</b></p>
+        </div>
+        <div class="info-item">
+          <p class="subtitles mb-1">STATUS</p>
+          <p><b class="value">Hand</b></p>
+        </div>
+        <div class="info-item">
+          <p class="subtitles mb-1">OPERATION MODE</p>
+          <p><b class="value">N/A</b></p>
+        </div>
+        <div class="info-item">
+          <p class="subtitles mb-1">DRIVE STATUS</p>
+          <p><b class="value">Forward</b></p>
+        </div>
+        <div class="info-item">
+          <p class="subtitles mb-1">DRIVE FAULT</p>
+          <p><b class="value">No Fault</b></p>
+        </div>
+      </div>
+
+      <div class="beam-alert-container">
+        <div>
+          <img src="assets/images/img1.png" alt="">
         </div>
 
-        <div class="col-md-6">
+        <div class="alert-status-box" style="min-width: 200px;">
           <h6 class="titles">ALERT STATUS</h6>
-          <div class="row row-cols-2 g-2">
-            <div class="col"><p class="subtitles"><i class="bi bi-check"></i> ESD Shutdown</p></div>
-            <div class="col"><p class="subtitles"><i class="bi bi-check"></i> Operation Shutdown</p></div>
-            <div class="col"><p class="subtitles"><i class="bi bi-check"></i> Vibration Shutdown</p></div>
-            <div class="col"><p class="subtitles"><i class="bi bi-check"></i> HH Pressure Shutdown</p></div>
-            <div class="col"><p class="subtitles"><i class="bi bi-check"></i> Alarm High</p></div>
-            <div class="col"><p class="subtitles"><i class="bi bi-check"></i> Alarm Low</p></div>
-            <div class="col"><p class="subtitles"><i class="bi bi-check"></i> Alert High</p></div>
-            <div class="col"><p class="subtitles"><i class="bi bi-check"></i> Fault Low</p></div>
-          </div>
+          <ul class="alert-list">
+            <li><i class="bi bi-check"></i> ESD Shutdown</li>
+            <li><i class="bi bi-check"></i> Operation Shutdown</li>
+            <li><i class="bi bi-check"></i> Vibration Shutdown</li>
+            <li><i class="bi bi-check"></i> HH Pressure Shutdown</li>
+            <li><i class="bi bi-check"></i> Alarm High</li>
+            <li><i class="bi bi-check"></i> Alarm Low</li>
+            <li><i class="bi bi-check"></i> Breached Hight</li>
+            <li><i class="bi bi-check"></i> Breached Low</li>
+            <li><i class="bi bi-check"></i> Fault Hight</li>
+            <li><i class="bi bi-check"></i> Fault Low</li>
+            <li><i class="bi bi-check"></i> Count Hight</li>
+            <li><i class="bi bi-check"></i> Count Low</li>
+            <li><i class="bi bi-check"></i> Sensors Fault</li>
+            <li><i class="bi bi-check"></i> Load Fault</li>
+            <li><i class="bi bi-check"></i> Positon Fault</li>
+            <li><i class="bi bi-check"></i> Torque Fault</li>
+            <li><i class="bi bi-check"></i>Pump Off Fault</li>
+          </ul>
         </div>
+      </div>
+    </div>
+
+    <div class="container-wrapper">
+      <div class="column info-data">
+        <h5 class="titles">ROD TAPER INFORMATION</h5>
+        <ul class="data-list">
+          <li>Diameter 1000 in</li>
+          <li>Length: 2755 ft</li>
+          <li>Modulus 305 MPSI</li>
+          <li>Speed of sound 16300 ft/sec</li>
+          <li>Weight 290 lbs/ft</li>
+        </ul>
+      </div>
+
+      <div class="column info-data">
+        <h5 class="titles">POLLED DATA</h5>
+        <ul class="data-list">
+          <li>Energy 0</li>
+          <li>Gas Production 100 SCF/day</li>
+          <li>Gross Production 13 bb/day</li>
+          <li>Net Production 10 bb/day</li>
+          <li>Pump Speed 38 SPM</li>
+          <li>PPRL 550%</li>
+          <li>MPRL 30%</li>
+          <li>Stroke Count 3899%</li>
+        </ul>
       </div>
     </div>
   </div>
 
 
+
   <script src="assets/js/bootstrap.min.js"></script>
+  <script>
+    document.write(
+      '<script src="http://' +
+      (location.host || '${1:localhost}').split(':')[0] +
+      ':35729/livereload.js?snipver=1"></' +
+      'script>'
+    );
+  </script>
 </body>
+
 </html>
