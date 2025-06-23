@@ -48,128 +48,199 @@
   </header>
 
 
-   <div class="main">
+  <div class="main">
 
-  <div class="over my-3">
-    <h5 class="titles mb-1">OVERVIEW</h5>
+    <div class="over my-3">
+      <h5 class="titles mb-1">OVERVIEW</h5>
 
-    <div class="row row-cols-auto g-3">
-      <div class="col">
-        <p class="subtitles mb-1">CUMULATIVE GROSS PROD.</p>
-        <p><b class="value">13</b> bbl</p>
-      </div>
-      <div class="col">
-        <p class="subtitles mb-1">CUMULATIVE RUNTIME</p>
-        <p><b class="value">1039</b> min</p>
-      </div>
-      <div class="col">
-        <p class="subtitles mb-1">LAST POLLED PIP</p>
-        <p><b class="value">0</b> psi</p>
-      </div>
-      <div class="col">
-        <p class="subtitles mb-1">LAST POLLED BHP</p>
-        <p><b class="value">0</b> psi</p>
-      </div>
-      <div class="col">
-        <p class="subtitles mb-1">LAST POLLED FHC</p>
-        <p><b class="value">0</b> ft</p>
+      <div class="row row-cols-auto g-3">
+        <div class="col">
+          <p class="subtitles mb-1">CUMULATIVE GROSS PROD.</p>
+          <p><b class="value">13</b> bbl</p>
+        </div>
+        <div class="col">
+          <p class="subtitles mb-1">CUMULATIVE RUNTIME</p>
+          <p><b class="value">1039</b> min</p>
+        </div>
+        <div class="col">
+          <p class="subtitles mb-1">LAST POLLED PIP</p>
+          <p><b class="value">0</b> psi</p>
+        </div>
+        <div class="col">
+          <p class="subtitles mb-1">LAST POLLED BHP</p>
+          <p><b class="value">0</b> psi</p>
+        </div>
+        <div class="col">
+          <p class="subtitles mb-1">LAST POLLED FHC</p>
+          <p><b class="value">0</b> ft</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="dashboard">
-    <div class="column beam-pump">
-      <h5 class="titles">BEAM PUMP</h5>
+    <div class="dashboard">
+      <div class="column beam-pump">
+        <h5 class="titles">BEAM PUMP</h5>
 
-      <div class="info-grid">
-        <div class="info-item">
-          <p class="subtitles mb-1">COUNTER BALANCE</p>
-          <p><b class="value">0%</b></p>
+        <div class="info-grid">
+          <div class="info-item">
+            <p class="subtitles mb-1">COUNTER BALANCE</p>
+            <p><b class="value">0%</b></p>
+          </div>
+          <div class="info-item">
+            <p class="subtitles mb-1">HZ</p>
+            <p><b class="value">0</b> rpm</p>
+          </div>
+          <div class="info-item">
+            <p class="subtitles mb-1">SPM</p>
+            <p><b class="value">38</b> SPM</p>
+          </div>
+          <div class="info-item">
+            <p class="subtitles mb-1">STATUS</p>
+            <p><b class="value">Hand</b></p>
+          </div>
+          <div class="info-item">
+            <p class="subtitles mb-1">OPERATION MODE</p>
+            <p><b class="value">N/A</b></p>
+          </div>
+          <div class="info-item">
+            <p class="subtitles mb-1">DRIVE STATUS</p>
+            <p><b class="value">Forward</b></p>
+          </div>
+          <div class="info-item">
+            <p class="subtitles mb-1">DRIVE FAULT</p>
+            <p><b class="value">No Fault</b></p>
+          </div>
         </div>
-        <div class="info-item">
-          <p class="subtitles mb-1">HZ</p>
-          <p><b class="value">0</b> rpm</p>
-        </div>
-        <div class="info-item">
-          <p class="subtitles mb-1">SPM</p>
-          <p><b class="value">38</b> SPM</p>
-        </div>
-        <div class="info-item">
-          <p class="subtitles mb-1">STATUS</p>
-          <p><b class="value">Hand</b></p>
-        </div>
-        <div class="info-item">
-          <p class="subtitles mb-1">OPERATION MODE</p>
-          <p><b class="value">N/A</b></p>
-        </div>
-        <div class="info-item">
-          <p class="subtitles mb-1">DRIVE STATUS</p>
-          <p><b class="value">Forward</b></p>
-        </div>
-        <div class="info-item">
-          <p class="subtitles mb-1">DRIVE FAULT</p>
-          <p><b class="value">No Fault</b></p>
+
+        <div class="beam-alert-container alertstatus">
+          <div>
+            <img src="assets/images/img1.png" alt="">
+          </div>
+
+          <div class="alert-status-box" style="min-width: 200px;">
+            <h6 class="titles">ALERT STATUS</h6>
+            <ul class="alert-list ">
+              <li class="background"><i class="bg-success rounded-circle d-inline-block ms-4 me-3 circle"></i>ESD Shutdown</li>
+              <li><i class="bg-success rounded-circle d-inline-block ms-4 me-3 circle"></i> Operation Shutdown</li>
+              <li class="background"><i class="bg-success rounded-circle d-inline-block ms-4 me-3 circle"></i> Vibration Shutdown</li>
+              <li><i class="bg-success rounded-circle d-inline-block ms-4 me-3 circle"></i> HH Pressure Shutdown</li>
+              <li class="background"><i class="bg-success rounded-circle d-inline-block ms-4 me-3 circle"></i> Alarm High</li>
+              <li><i class="bg-success rounded-circle d-inline-block ms-4 me-3 circle"></i> Alarm Low</li>
+              <li class="background"><i class="bg-success rounded-circle d-inline-block ms-4 me-3 circle"></i> Breached Hight</li>
+              <li><i class="bg-success rounded-circle d-inline-block ms-4 me-3 circle"></i> Breached Low</li>
+              <li class="background"><i class="bg-success rounded-circle d-inline-block ms-4 me-3 circle"></i> Fault Hight</li>
+              <li><i class="bg-success rounded-circle d-inline-block ms-4 me-3 circle"></i> Fault Low</li>
+              <li class="background"><i class="bg-success rounded-circle d-inline-block ms-4 me-3 circle"></i> Count Hight</li>
+              <li><i class="bg-success rounded-circle d-inline-block ms-4 me-3 circle"></i> Count Low</li>
+              <li class="background"><i class="bg-success rounded-circle d-inline-block ms-4 me-3 circle"></i> Sensors Fault</li>
+              <li><i class="bg-success rounded-circle d-inline-block ms-4 me-3 circle"></i> Load Fault</li>
+              <li class="background"><i class="bg-success rounded-circle d-inline-block ms-4 me-3 circle"></i> Positon Fault</li>
+              <li><i class="bg-success rounded-circle d-inline-block ms-4 me-3 circle"></i> Torque Fault</li>
+              <li class="background"><i class="bg-success rounded-circle d-inline-block ms-4 me-3 circle"></i> Pump Off Fault</li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      <div class="beam-alert-container">
-        <div>
-          <img src="assets/images/img1.png" alt="">
+      <div class="container-wrapper">
+        <div class="column info-data">
+          <h5 class="titles">ROD TAPER INFORMATION</h5>
+          <ul class="data-list">
+            <li>
+              <div class="values background">
+                <span>Diameter</span>
+                <span><b>1000</b> in</span>
+              </div>
+            </li>
+            <li>
+              <div class="values">
+                <span>Length</span>
+                <span><b>2755</b> ft</span>
+              </div>
+            </li>
+            <li>
+              <div class="values background">
+                <span>Modulus</span>
+                <span><b>305</b> MPSI</span>
+              </div>
+            </li>
+            <li>
+              <div class="values">
+                <span>Speed of sound</span>
+                <span><b>16300</b> ft/sec</span>
+              </div>
+            </li>
+            <li>
+              <div class="values background">
+                <span>Weight</span>
+                <span><b>290</b> ibs/ft</span>
+              </div>
+            </li>
+          </ul>
         </div>
 
-        <div class="alert-status-box" style="min-width: 200px;">
-          <h6 class="titles">ALERT STATUS</h6>
-          <ul class="alert-list">
-            <li><i class="bi bi-check"></i> ESD Shutdown</li>
-            <li><i class="bi bi-check"></i> Operation Shutdown</li>
-            <li><i class="bi bi-check"></i> Vibration Shutdown</li>
-            <li><i class="bi bi-check"></i> HH Pressure Shutdown</li>
-            <li><i class="bi bi-check"></i> Alarm High</li>
-            <li><i class="bi bi-check"></i> Alarm Low</li>
-            <li><i class="bi bi-check"></i> Breached Hight</li>
-            <li><i class="bi bi-check"></i> Breached Low</li>
-            <li><i class="bi bi-check"></i> Fault Hight</li>
-            <li><i class="bi bi-check"></i> Fault Low</li>
-            <li><i class="bi bi-check"></i> Count Hight</li>
-            <li><i class="bi bi-check"></i> Count Low</li>
-            <li><i class="bi bi-check"></i> Sensors Fault</li>
-            <li><i class="bi bi-check"></i> Load Fault</li>
-            <li><i class="bi bi-check"></i> Positon Fault</li>
-            <li><i class="bi bi-check"></i> Torque Fault</li>
-            <li><i class="bi bi-check"></i> Pump Off Fault</li>
+        <div class="column info-data">
+          <h5 class="titles">POLLED DATA</h5>
+          <ul class="data-list">
+            <li>
+              <div class="values background">
+                <span>Energy</span>
+                <span>0</span>
+              </div>
+            </li>
+            <li>
+              <div class="values">
+                <span>Gas Production</span>
+                <span><b>100</b> SCF/day</span>
+              </div>
+            </li>
+            <li>
+              <div class="values background">
+                <span>Gross Production</span>
+                <span><b>13</b> bb/day</span>
+              </div>
+            </li>
+            <li>
+              <div class="values">
+                <span>Net Production</span>
+                <span><b>10</b> bb/day</span>
+              </div>
+            </li>
+            <li>
+              <div class="values background">
+                <span>Pump Speed</span>
+                <span><b>38</b> SPM</span>
+              </div>
+            </li>
+            <li>
+              <div class="values">
+                <span>Run time</span>
+                <span>0</span>
+              </div>
+            </li>
+            <li>
+              <div class="values background">
+                <span>PPRL</span>
+                <span><b>550</b> %</span>
+              </div>
+            </li>
+            <li>
+              <div class="values">
+                <span>MPRL</span>
+                <span><b>30</b> %</span>
+              </div>
+            </li>
+            <li>
+              <div class="values background">
+                <span>Stroke Count</span>
+                <span><b>3899</b> %</span>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
     </div>
-
-    <div class="container-wrapper">
-      <div class="column info-data">
-        <h5 class="titles">ROD TAPER INFORMATION</h5>
-        <ul class="data-list">
-          <li>Diameter 1000 in</li>
-          <li>Length: 2755 ft</li>
-          <li>Modulus 305 MPSI</li>
-          <li>Speed of sound 16300 ft/sec</li>
-          <li>Weight 290 lbs/ft</li>
-        </ul>
-      </div>
-
-      <div class="column info-data">
-        <h5 class="titles">POLLED DATA</h5>
-        <ul class="data-list">
-          <li>Energy 0</li>
-          <li>Gas Production 100 SCF/day</li>
-          <li>Gross Production 13 bb/day</li>
-          <li>Net Production 10 bb/day</li>
-          <li>Pump Speed 38 SPM</li>
-          <li>PPRL 550%</li>
-          <li>MPRL 30%</li>
-          <li>Stroke Count 3899%</li>
-        </ul>
-      </div>
-    </div>
   </div>
-   </div>
 
 
 
