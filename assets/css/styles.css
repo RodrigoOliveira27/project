@@ -18,11 +18,11 @@ header {
 
 .over {
     flex: 1;
-    width: 96.8vw;
+    width: 100%;
     background-color: #FFFFFF;
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 20px 30px;
+    padding: 20px;
     box-sizing: border-box;
 }
 
