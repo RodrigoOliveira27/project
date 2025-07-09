@@ -3,3 +3,4 @@ export interface ISummaryData {
     value: string | boolean | number,
     unit: string
 }
+
