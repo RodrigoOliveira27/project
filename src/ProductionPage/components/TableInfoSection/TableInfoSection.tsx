@@ -1,6 +1,6 @@
 import "./styles.css"
 import type { ISummaryData } from "../../../types";
-import TableValueDisplay from "../TableVauleDisplay/TableValueDisplay";
+import TableValueDisplay from "../TableValueDisplay/TableValueDisplay";
 
 interface ITableinfoSectionProps {
   sectionTitle: string;
@@ -10,7 +10,7 @@ interface ITableinfoSectionProps {
 const TableinfoSection = ({ sectionTitle, values }: ITableinfoSectionProps) => {
   return (
     <div className="section-container">
-      <div className="sectiontitle">{sectionTitle}</div>
+      <div className="section-title">{sectionTitle}</div>
       <div className="table-container">
         {values.map((value) => (
           <div className="table-item">

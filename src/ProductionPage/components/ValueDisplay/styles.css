@@ -1,20 +1,19 @@
-.ValueDisplayContainer {
-  .Title {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+.value-display-container {
+  .title {
     color: rgb(185, 185, 185);
   }
 
-  .ValueContainer {
+  .value-container {
     display: flex;
     align-items: baseline;
     gap: 4px;
   }
 
-  .Value {
+  .value {
     font-size: 23px;
   }
 
-  .Unit {
+  .unit {
     font-size: 15px;
   }
 }
