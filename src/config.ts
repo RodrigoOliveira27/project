@@ -38,7 +38,7 @@ export const DATA_SUMMARY2: ISummaryData[] = [
     value: 85,
     unit: "PSI",
   },
-    {
+  {
     title: "Tubing Pressure",
     value: 100,
     unit: "PSI",
@@ -48,7 +48,7 @@ export const DATA_SUMMARY2: ISummaryData[] = [
     value: 85,
     unit: "PSI",
   },
-    {
+  {
     title: "Tubing Pressure",
     value: 100,
     unit: "PSI",
@@ -58,6 +58,4 @@ export const DATA_SUMMARY2: ISummaryData[] = [
     value: 85,
     unit: "PSI",
   },
-  
 ];
-

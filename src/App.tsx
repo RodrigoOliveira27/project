@@ -9,6 +9,8 @@ import {
 import OverviewSection from "./ProductionPage/components/OverviewSection/OverviewSection";
 import TableinfoSection from "./ProductionPage/components/TableInfoSection/TableInfoSection";
 import Card from "./ProductionPage/components/Card";
+import StatusValue from "./StatusValue";
+import StatusList from "./ProductionPage/components/StatusList/StatusList";
 
 function App() {
   return (
@@ -19,6 +21,10 @@ function App() {
       <div className="dashboard-table-1">
         <Card>
           <TableinfoSection sectionTitle={DASHBOARD1} values={DATA_SUMMARY2} />
+        </Card>
+
+        <Card >
+          <StatusList  sectionTitle={DASHBOARD1} value={DATA_SUMMARY}/>
         </Card>
       </div>
     </div>
