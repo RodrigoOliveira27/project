@@ -14,3 +14,19 @@ export interface IAlert {
     title: string,
     status: EStatus
 }
+
+export interface IProduction {
+    wellImage: string;
+    overView: IOverview;
+    statusAlerts: IAlertstatus;
+}
+
+export interface IOverview {
+    title: string;
+    list: ISummaryData[];
+}
+
+export interface IAlertstatus {
+    title: string;
+    list: IAlert[];
+}

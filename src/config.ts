@@ -1,4 +1,4 @@
-import { EStatus, type IAlert, type ISummaryData } from "./types";
+import { EStatus, type IAlert, type IAlertstatus, type IOverview, type IProduction, type ISummaryData } from "./types";
 
 export const OVERVIEW_TITLE: string = "Overview";
 
@@ -76,3 +76,20 @@ export const ALERTS: IAlert[] = [
     status: EStatus.Error
   },
 ]
+
+export const STATUS_ALERT_SECTION: IAlertstatus = {
+  title: "sdfds",
+  list: ALERTS,
+}
+
+export const OVERVIEW_SECTION: IOverview = {
+  title: "sdsaa",
+  list: DATA_SUMMARY,
+}
+
+export const PRODUCTION_SECTION: IProduction = {
+  wellImage: "/img1.png",
+  overView: OVERVIEW_SECTION,
+  statusAlerts: STATUS_ALERT_SECTION,
+
+}

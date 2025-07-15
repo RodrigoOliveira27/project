@@ -1,29 +1,26 @@
-import { imagem } from "../../../config";
-import type { ISummaryData } from "../../../types";
+import type { IProduction } from "../../../types";
 import InformationPills from "../InformationPills/InformationPills";
-import ValueDisplay from "../ValueDisplay/ValueDisplay";
+import OverviewSection from "../OverviewSection";
+import StatusList from "../StatusList/StatusList";
 import "./styles.css";
 
 interface IWellDisplayProps {
-  sectionTitle: string;
-  values: ISummaryData[];
+  production: IProduction;
 }
 
-const WellDisplay = ({ sectionTitle, values }: IWellDisplayProps) => {
+const WellDisplay = ({ production }: IWellDisplayProps) => {
   return (
-    <div>
-      <div>{sectionTitle}</div>
-      <div>
-        {values.map((value) => (
-          <ValueDisplay
-            title={value.title}
-            value={value.value}
-            unit={value.unit}
-          />
-        ))}
-      </div>
-      <div>
-        <InformationPills src={imagem} />
+    <div className="well-display-container">
+      <OverviewSection
+        sectionTitle={production.overView.title}
+        values={production.overView.list}
+      />
+      <div className="production-content">
+        <InformationPills src={production.wellImage} />
+        <StatusList
+          sectionTitle={production.statusAlerts.title}
+          values={production.statusAlerts.list}
+        />
       </div>
     </div>
   );
