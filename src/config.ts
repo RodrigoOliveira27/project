@@ -1,8 +1,10 @@
-import type { ISummaryData } from "./types";
+import { EStatus, type IAlert, type ISummaryData } from "./types";
 
 export const OVERVIEW_TITLE: string = "Overview";
 
 export const DASHBOARD1: string = "ROD TAPER INFORMATION";
+
+export const imagem: string = "/img1.png";
 
 export const DATA_SUMMARY: ISummaryData[] = [
   {
@@ -59,3 +61,18 @@ export const DATA_SUMMARY2: ISummaryData[] = [
     unit: "PSI",
   },
 ];
+
+export const ALERTS: IAlert[] = [
+  {
+    title: "Production",
+    status: EStatus.Success
+  },
+    {
+    title: "Monitoring",
+    status: EStatus.Warning
+  },
+    {
+    title: "Reaching KPIs",
+    status: EStatus.Error
+  },
+]

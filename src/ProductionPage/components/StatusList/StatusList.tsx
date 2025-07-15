@@ -1,20 +1,20 @@
-import StatusValue from "../../../StatusValue";
-import type { ISummaryData } from "../../../types";
+import StatusValue from "../StatusValue"
+import type { IAlert, ISummaryData } from "../../../types";
 import "./styles.css"
 
 interface IStatusListProps {
   sectionTitle: string;
-  value: ISummaryData[];
+  values: IAlert[];
 }
 
-const StatusList = ({ sectionTitle, value }: IStatusListProps) => {
+const StatusList = ({ sectionTitle, values }: IStatusListProps) => {
   return (
-    <div className="section-container">
+    <div className="section-title">
       <div className="sectiontitle">{sectionTitle}</div>
-      <div className="table-container">
-        {value.map((value) => (
-          <div className="table-tem">
-            <StatusValue alertname={value.title} status={value.value} />
+      <div className="status-container">
+        {values.map((value) => (
+          <div className="status-item">
+            <StatusValue alertname={value.title} status={value.status} />
           </div>
         ))}
       </div>

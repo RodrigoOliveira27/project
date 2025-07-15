@@ -5,12 +5,14 @@ import {
   DATA_SUMMARY2,
   OVERVIEW_TITLE,
   DASHBOARD1,
+  ALERTS,
+  imagem,
 } from "./config";
 import OverviewSection from "./ProductionPage/components/OverviewSection/OverviewSection";
 import TableinfoSection from "./ProductionPage/components/TableInfoSection/TableInfoSection";
 import Card from "./ProductionPage/components/Card";
-import StatusValue from "./StatusValue";
 import StatusList from "./ProductionPage/components/StatusList/StatusList";
+import InformationPills from "./ProductionPage/components/InformationPills/InformationPills";
 
 function App() {
   return (
@@ -18,14 +20,18 @@ function App() {
       <Card>
         <OverviewSection sectionTitle={OVERVIEW_TITLE} values={DATA_SUMMARY} />
       </Card>
+      
       <div className="dashboard-table-1">
-        <Card>
-          <TableinfoSection sectionTitle={DASHBOARD1} values={DATA_SUMMARY2} />
-        </Card>
 
         <Card >
-          <StatusList  sectionTitle={DASHBOARD1} value={DATA_SUMMARY}/>
+          <StatusList  sectionTitle={DASHBOARD1} values={ALERTS}/>
         </Card>
+
+        <Card > 
+          <TableinfoSection sectionTitle={OVERVIEW_TITLE} values={DATA_SUMMARY2} />
+        </Card>
+
+        <InformationPills src={imagem} />
       </div>
     </div>
   );
