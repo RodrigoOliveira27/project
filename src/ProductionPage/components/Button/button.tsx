@@ -2,15 +2,12 @@ import "./styles.css";
 
 export interface IButtonProps {
   text: string;
-  alertText: string; 
+  onButtonClick: () => void 
 }
 
-const Button = ({ text, alertText }: IButtonProps) => {
-  const handleClick = () => {
-    alert(alertText); 
-  };
+const Button = ({ text, onButtonClick }: IButtonProps) => {
 
-  return <button onClick={handleClick}>{text}</button>;
+  return <button onClick={onButtonClick}>{text}</button>;
 };
 
 export default Button;

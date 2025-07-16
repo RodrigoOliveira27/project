@@ -32,6 +32,10 @@ function App() {
     [well]
   );
 
+  const onLogout = () => {
+    alert(" User has been logged out!")
+  }
+
   return (
     <div className="app-container" style={{ backgroundColor: color }}>
       <div className="app-container-2">
@@ -64,7 +68,7 @@ function App() {
                     values={DATA_SUMMARY}
                   />
                 </Card>
-                <Button text="Botão" alertText="32332" />
+                <Button text="Logout" onButtonClick={onLogout} />
                 <DropDown
                   selectedOption={well}
                   options={DROPDOWN_LIST}
