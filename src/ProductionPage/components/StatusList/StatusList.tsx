@@ -1,5 +1,5 @@
 import StatusValue from "../StatusValue"
-import type { IAlert, ISummaryData } from "../../../types";
+import type { IAlert } from "../../../types";
 import "./styles.css"
 
 interface IStatusListProps {
