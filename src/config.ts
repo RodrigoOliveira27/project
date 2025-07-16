@@ -111,3 +111,5 @@ export const PRODUCTION_SECTION: IProduction = {
   overView: OVERVIEW_SECTION,
   statusAlerts: STATUS_ALERT_SECTION,
 };
+
+export const DROPDOWN_LIST: string[] = ["well 01", "well 02", "well 03"];

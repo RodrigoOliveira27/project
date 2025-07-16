@@ -2,24 +2,38 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   DATA_SUMMARY,
-  DATA_SUMMARY2,
+  DROPDOWN_LIST,
   OVERVIEW_TITLE,
-  DASHBOARD1,
-  ALERTS,
-  imagem,
-  STATUS_ALERT_SECTION,
   PRODUCTION_SECTION,
 } from "./config";
 import OverviewSection from "./ProductionPage/components/OverviewSection/OverviewSection";
 import TableinfoSection from "./ProductionPage/components/TableInfoSection/TableInfoSection";
 import Card from "./ProductionPage/components/Card";
-import StatusList from "./ProductionPage/components/StatusList/StatusList";
-import InformationPills from "./ProductionPage/components/InformationPills/InformationPills";
 import WellDisplay from "./ProductionPage/components/WellDisplay/WellDisplay";
+import Button from "./ProductionPage/components/Button/button";
+import DropDown from "./ProductionPage/components/DropDown/DropDown";
+import { useMemo, useState } from "react";
 
 function App() {
+  const [well, setWell] = useState<string>();
+
+  const onWellChange = (option: string) => {
+    setWell((previous) => {
+      console.log(`anterior:${previous} / seguinte: ${option}`);
+      return option;
+    });
+  };
+
+  const color = useMemo(
+    () =>
+      `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${
+        Math.random() * 255
+      })`,
+    [well]
+  );
+
   return (
-    <div className="app-container">
+    <div className="app-container" style={{ backgroundColor: color }}>
       <div className="app-container-2">
         <Card>
           <OverviewSection
@@ -50,6 +64,12 @@ function App() {
                     values={DATA_SUMMARY}
                   />
                 </Card>
+                <Button text="Botão" alertText="32332" />
+                <DropDown
+                  selectedOption={well}
+                  options={DROPDOWN_LIST}
+                  onSelectOption={onWellChange}
+                />
               </div>
             </div>
           </div>
