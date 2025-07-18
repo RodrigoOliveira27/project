@@ -1,0 +1,11 @@
+
+
+.production-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.StatusList {
+  width: 30%;
+  height: 100%;
+}
