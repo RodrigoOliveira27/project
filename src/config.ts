@@ -34,6 +34,11 @@ export const DATA_SUMMARY: ISummaryData[] = [
     value: 100,
     unit: "PSI",
   },
+    {
+    title: "Casing Pressure",
+    value: 85,
+    unit: "PSI",
+  },
 ];
 
 export const DATA_SUMMARY2: ISummaryData[] = [
@@ -53,6 +58,11 @@ export const DATA_SUMMARY2: ISummaryData[] = [
     unit: "PSI",
   },
   {
+    title: "Casing Pressure",
+    value: 85,
+    unit: "PSI",
+  },
+    {
     title: "Casing Pressure",
     value: 85,
     unit: "PSI",
@@ -97,12 +107,12 @@ export const ALERTS: IAlert[] = [
 ];
 
 export const STATUS_ALERT_SECTION: IAlertstatus = {
-  title: "sdfds",
+  title: "Alert Status",
   list: ALERTS,
 };
 
 export const OVERVIEW_SECTION: IOverview = {
-  title: "sdsaa",
+  title: "Beam Pump",
   list: DATA_SUMMARY,
 };
 
@@ -113,3 +123,5 @@ export const PRODUCTION_SECTION: IProduction = {
 };
 
 export const DROPDOWN_LIST: string[] = ["well 01", "well 02", "well 03"];
+
+export const TABS_NAMES: string[] = ["Beam Pump"]

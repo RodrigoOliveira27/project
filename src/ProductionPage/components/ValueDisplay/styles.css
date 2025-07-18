@@ -1,4 +1,6 @@
 .value-display-container {
+  margin-top: 10px;
+  
   .title {
     color: rgb(185, 185, 185);
   }
@@ -10,7 +12,8 @@
   }
 
   .value {
-    font-size: 23px;
+    font-size: 20px;
+    font-weight: bold;
   }
 
   .unit {

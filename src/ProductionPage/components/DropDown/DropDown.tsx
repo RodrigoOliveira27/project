@@ -8,10 +8,11 @@ interface IDropDownProps {
 
 const DropDown = ({ selectedOption, options, onSelectOption }: IDropDownProps) => {
   return (
+    <div className="dropdown-wrapper">
     <select
       value={selectedOption}
       onChange={(e) => onSelectOption(e.target.value)}
-      className="drop-down"
+      className="dropdown-select"
     >
       {options.map((option, index) => (
         <option key={index} value={option}>
@@ -19,6 +20,7 @@ const DropDown = ({ selectedOption, options, onSelectOption }: IDropDownProps) =
         </option>
       ))}
     </select>
+    </div>
   );
 };
 

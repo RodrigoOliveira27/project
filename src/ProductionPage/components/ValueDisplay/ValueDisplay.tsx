@@ -9,7 +9,7 @@ interface IValueDisplayProps {
 const ValueDisplay = ({ title, value, unit }: IValueDisplayProps) => {
   return (
     <div className="value-display-container">
-      <div>{title}</div>
+      <div className="title">{title}</div>
       <div>
         <span className="value">{value}</span>
         <span className="unit">{unit}</span>

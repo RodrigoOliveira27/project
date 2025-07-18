@@ -9,6 +9,7 @@ interface IStatusListProps {
 
 const StatusList = ({ sectionTitle, values }: IStatusListProps) => {
   return (
+    <div>
     <div className="section-title">
       <div className="sectiontitle">{sectionTitle}</div>
       <div className="status-container">
@@ -18,6 +19,7 @@ const StatusList = ({ sectionTitle, values }: IStatusListProps) => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };

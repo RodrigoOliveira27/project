@@ -10,7 +10,7 @@ interface IOverviewSectionProps {
 const OverviewSection = ({ sectionTitle, values }: IOverviewSectionProps) => {
   return (
     <div className="Overview">
-      <div>{sectionTitle}</div>
+      <div className="section-title-over">{sectionTitle}</div>
       <div className="info">
         {values.map((value) => (
           <ValueDisplay

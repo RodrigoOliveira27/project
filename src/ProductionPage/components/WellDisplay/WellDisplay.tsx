@@ -17,10 +17,12 @@ const WellDisplay = ({ production }: IWellDisplayProps) => {
       />
       <div className="production-content">
         <InformationPills src={production.wellImage} />
+        <div className="StatusList">
         <StatusList
           sectionTitle={production.statusAlerts.title}
           values={production.statusAlerts.list}
         />
+        </div>
       </div>
     </div>
   );
